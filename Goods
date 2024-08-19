@@ -4,13 +4,31 @@
 #include <iostream>
 #include <cstring>
 
-using namespace std;
+class Item {
+private:
+	std::string name;
+	int id;
+	int priceSell;
+	int priceBuy;
+public:
+	Item(std::string name, int id, int priceSell, int priceBuy);
+	void showItem();
+};
 
-class Goods {
+class Goods :public Item{
+private:
+	std::string name; //装备名称
+	std::string desc; //装备描述
+	int id;
+	//int type; //装备类型：0-武器、1-防具、2-药物       //这块用继承，好维护一点而且代码高级（×）一点
+	
+
+	int priceSell; //装备售出价格
+	int priceBuy; //装备购入价格
 public:
 	Goods(int id);
-	string getName();
-	string getDesc();
+	std::string getName();
+	std::string getDesc();
 	int getType();
 	int getaddAttack();
 	int getaddDefend();
@@ -20,16 +38,34 @@ public:
 	int getpriceBuy();
 	void showGoods();
 	~Goods();
+};
+
+class weapon :public Goods {  //武器
 private:
-	string name; //装备名称
-	string desc; //装备描述
-	int id;
-	int type; //装备类型：0-武器、1-防具、2-药物
+	std::string name; //装备名称
+	std::string desc; //装备描述
 	int addAttack; //攻击增益
 	int addDefend; //防御增益
+public:
+	;
+};
+
+class potion :public Goods {   //药水
+private:
+	std::string name; //装备名称
+	std::string desc; //装备描述
 	int addHP; //气血增益
 	int addMP; //魔法值增益
-	int priceSell; //装备售出价格
-	int priceBuy; //装备购入价格
+public:
+};
+
+class armor :public Goods {    //盔甲
+private:
+	std::string name; //装备名称
+	std::string desc; //装备描述
+	int addAttack; //攻击增益
+	int addDefend; //防御增益
+public:
+	;
 };
 #endif 
