@@ -1,0 +1,35 @@
+#ifndef GOODS_H
+#define GOODS_H
+
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+class Goods {
+public:
+	Goods(int id);
+	string getName();
+	string getDesc();
+	int getType();
+	int getaddAttack();
+	int getaddDefend();
+	int getaddHP();
+	int getaddMP();
+	int getpriceSell();
+	int getpriceBuy();
+	void showGoods();
+	~Goods();
+private:
+	string name; //装备名称
+	string desc; //装备描述
+	int id;
+	int type; //装备类型：0-武器、1-防具、2-药物
+	int addAttack; //攻击增益
+	int addDefend; //防御增益
+	int addHP; //气血增益
+	int addMP; //魔法值增益
+	int priceSell; //装备售出价格
+	int priceBuy; //装备购入价格
+};
+#endif 
