@@ -1,13 +1,10 @@
-class Save {
-private:
-	;
-public:
-	void save();
-};
+#include"Goods.h"
 
-class Read {
+class Store {
 private:
-	;
+	Goods a;
 public:
-	void read();
+	void getgoods(char* goodsname, int bill);
+	void soldgoods(char* goodsname, int bill);
+	void showgoods();
 };
