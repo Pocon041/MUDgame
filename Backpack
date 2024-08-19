@@ -1,0 +1,11 @@
+//#include"Goods.h"
+
+class Bag {
+private:
+	int size;
+	Goods a;
+public:
+	void add(Goods* a);
+	void use(Goods* a);
+	void showgoods(Goods* a);
+};
