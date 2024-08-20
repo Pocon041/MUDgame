@@ -65,19 +65,39 @@ public:
 	void setStory(int s);		//设置故事节点
 };
 
-class Merchant: public Role{	//商人
-	std::string name;			//昵称
-	Bag merchant;
+
+class NPC :public Role
+{
+private:
+	std::string name;
+	unsigned long id;
+public:
+	NPC();
+	void getname();				//昵称
+	void getid();
 };
 
-class Soldier : public Role{   //小兵
+
+
+class Merchant: public NPC		//商人
+{	
+private:
+	Bag merchant;
+public:
+	Merchant();
+};
+
+class Soldier : public NPC		//小兵
+{  
 private:
 	std::string name;		//昵称
 	int level;				//级别
 	int attack;				//攻击力
 	int defend;				//防御
 
-	Bag soldier;
+	Bag soldier;		
+public:
+	Soldier();
 };
 
 #endif // ROLE_H_INCLUDED
