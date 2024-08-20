@@ -28,7 +28,7 @@ public:
     void Fight_AddGoods();              //道具拾取
 
 private:
-    Role player;
+	Role player;
 	Npc enemy;
 	int round;                          //战斗回合数
 	int damage;                         //伤害值
