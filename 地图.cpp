@@ -1,75 +1,25 @@
 #include <iostream>  
 
-using namespace std;
-
-/*void printMap() {  
-    std::cout << "Éú×Ó±Ê¼Ç\n";  
-    std::cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´\n";  
-    std::cout << "©¦   Íâ³Ç   ©¦\n";  
-    std::cout << "©À©¤©¤©¤©¤©¤©¤©¤©¤©¤©È\n";  
-    std::cout << "©¦  ¹ÙµÀ    ©¦\n";  
-    std::cout << "©À©¤©¤©¤©¤©¤©¤©¤©¤©¤©È\n";  
-    std::cout << "©¦  ÐÐÉÌµØµã ©¦\n";  
-    std::cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼\n";  
-    std::cout << "    ©¦\n";  
-    std::cout << "    ¨‹\n";  
-    std::cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´\n";  
-    std::cout << "©¦  É½Ò°Ð¡Â· ©¦\n";  
-    std::cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼\n";  
-    std::cout << "    ©¦\n";  
-    std::cout << "    ¨‹\n";  
-    std::cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´\n";  
-    std::cout << "©¦  ÐÂÊÖ´å  ©¦\n";  
-    std::cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼\n";  
-    std::cout << "    ©¦\n";  
-    std::cout << "    ¨‹\n";  
-    std::cout << "©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©´\n";  
-    std::cout << "©¦  ¾öÕ½    ©¦\n";  
-    std::cout << "©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼\n";  
-} */ 
-
-/*void printMap(){
-	std::cout<< "				 _______		 "<<endl;
-	std::cout<< "	  	|		|		|		|"<<endl;
-	std::cout<< "				|_______|		"<<endl;
-	std::cout<< "	   	|		|	|	|		|"<<endl;
-	std::cout<< "_______|_______|___|___|_______|"<<endl;
-	std::cout<< "		|		|		|		|"<<endl;
-	std::cout<< "_______|_______|_______|_______|"<<endl;
-	std::cout<< "		|		|	|	|		|"<<endl;
-	std::cout<< "		|_______|___|___|		|"<<endl;
-	std::cout<< "		|		|		|		|"<<endl;
-	std::cout<< "		|_______|_______|		|"<<endl;
-	std::cout<< "		|		|	|	|		|"<<endl;
-	std::cout<< "		|		|___|___|		|"<<endl;
-	std::cout<< "		|		|		|		|"<<endl;
-	std::cout<< "		|		|_______|		|"<<endl;
-	std::cout<< "		|		|		|		|"<<endl;
-	std::cout<< "		|		|		|		|"<<endl;
-	
-}*/
-#include <iostream>  
-
 void printMap() {  
-    std::cout << "                      _______          " << std::endl;  
-    std::cout << "                     |       |         " << std::endl;  
-    std::cout << "                     |  Íâ³Ç |         " << std::endl;
-    std::cout << "                     |_______|                 " << std::endl;  
-    std::cout << "                        |               " << std::endl;  
-    std::cout << "      __________________|____________  " << std::endl;  
-    std::cout << "     |	   |	   |	   |	   |" << std::endl; 
-	std::cout << "     |ºÚ·çÕ¯ |  Ð¡Â· |  ¹ÜµÀ |  ÉÌµê |  " << std::endl;  
-    std::cout << "     |_______|_______|_______|_______|" << std::endl;  
-    std::cout << "                        |               " << std::endl;  
-    std::cout << "             ___________|____          " << std::endl;  
-    std::cout << "            |        |       |         " << std::endl;  
-    std::cout << "            |    £¿  |ÐÂÊÖ´å |         " << std::endl;  
-    std::cout << "            |________|_______|         " << std::endl;  
-    std::cout << "                        |            " << std::endl;  
-    std::cout << "                     ___|___         " << std::endl;  
-    std::cout << "                    |       |         " << std::endl;  
-    std::cout << "                    |  ºóÉ½ |         " << std::endl;  
-    std::cout << "                    |_______|         " << std::endl;  
+    	std::cout << "                      _______          " << std::endl;  
+    	std::cout << "                     |       |         " << std::endl;  
+    	std::cout << "                     |  å¤–åŸŽ |         " << std::endl;
+    	std::cout << "                     |_______|                 " << std::endl;  
+    	std::cout << "                        |               " << std::endl;  
+    	std::cout << "      __________________|____________  " << std::endl;  
+    	std::cout << "     |	   |	   |	   |	   |" << std::endl; 
+	std::cout << "     |é»‘é£Žå¯¨  |  å°è·¯ |  ç®¡é“ |  å•†åº—  |  " << std::endl;  
+    	std::cout << "     |_______|_______|_______|_______|" << std::endl;  
+    	std::cout << "                        |               " << std::endl;  
+    	std::cout << "             ___________|____          " << std::endl;  
+    	std::cout << "            |        |       |         " << std::endl;  
+    	std::cout << "            |    ï¼Ÿ  |æ–°æ‰‹æ‘ |         " << std::endl;  
+    	std::cout << "            |________|_______|         " << std::endl;  
+    	std::cout << "                        |            " << std::endl;  
+    	std::cout << "                     ___|___         " << std::endl;  
+    	std::cout << "                    |       |         " << std::endl;  
+    	std::cout << "                    |  åŽå±± |         " << std::endl;  
+    	std::cout << "                    |_______|         " << std::endl;  
 }  
 
 
