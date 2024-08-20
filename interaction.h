@@ -11,6 +11,13 @@
 //一.1  战斗：                 （目前只支持1v1，1vN可能需要用到容器或者数组，还没想好）
 class Fight
 (
+private:
+	Role player;
+	Npc enemy;
+	int round;                          //战斗回合数
+	int damage;                         //伤害值
+	Goods goods[24] = { 0, 1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 };         //物品？暂定
+
 public:
     Fight ( Role player, Npc enemy);    //对战双方信息
     void Fight_RoundStart();            //对战每回合开始时重复，执行下列函数
@@ -26,27 +33,19 @@ public:
     void Fight_AddExp();                //经验增加
     void FIght_AddMoney();              //金币增加
     void Fight_AddGoods();              //道具拾取
-
-private:
-	Role player;
-	Npc enemy;
-	int round;                          //战斗回合数
-	int damage;                         //伤害值
-	Goods goods[24] = { 0, 1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 };         //物品？暂定
 )
 
 //一.2  交流
 class Communicate
 {
-public:
-    Communicate(Role player, Npc npc);  //交谈双方信息
-    Communicate_Judge();                //此处要求npc必须有编号！！！      根据编号判断该npc是否为事先初始化好能触发奇遇的某几个特定npc
-    communicate_Express();              //对话展示（一些可有可无的剧情）
-
 private:
     Role player;
     Npc npc;
 
+public:
+    Communicate(Role player, Npc npc);  //交谈双方信息
+    Communicate_Judge();                //此处要求npc必须有编号！！！      根据编号判断该npc是否为事先初始化好能触发奇遇的某几个特定npc
+    communicate_Express();              //对话展示（一些可有可无的剧情）
 }
 
 //一.3    购买
