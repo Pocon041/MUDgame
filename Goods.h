@@ -7,30 +7,37 @@
 class Item {
 private:
 	std::string name;
-	int id;
+	std::string desc;
 	int priceSell;
 	int priceBuy;
+	int id;
 public:
-	Item(std::string name, int id, int priceSell, int priceBuy);
+	Item(std::string name,int priceSell, int priceBuy);
+	Item();
+	virtual int getaddAttack();
+	virtual int getaddDefend();
+	virtual int getaddHP();
+	virtual int getaddMP();
 	void showItem();
 };
 
-class Goods :public Item {
-private:
+class Goods :public Item{
+protected:
 	std::string name; //装备名称
 	std::string desc; //装备描述
-	int id;
 	//int type; //装备类型：0-武器、1-防具、2-药物       //这块用继承，好维护一点而且代码高级（×）一点
-
-
+	
+	int id;
 	int priceSell; //装备售出价格
 	int priceBuy; //装备购入价格
 public:
-	Goods(std::string name, std::string desc, int id, int priceSell, int priceBuy);
+	Goods(std::string name, std::string desc,int priceSell, int priceBuy, int id);
+	Goods();
 	std::string getName();
 	std::string getDesc();
 	int getpriceSell();
 	int getpriceBuy();
+	int getId();
 	~Goods();
 };
 
@@ -43,7 +50,7 @@ public:
 	int getaddAttack();
 	int getaddDefend();
 	~Weapon();
-
+	
 };
 
 class Potion :public Goods {   //药水
